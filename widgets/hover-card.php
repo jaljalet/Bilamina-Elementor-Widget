@@ -1,7 +1,7 @@
 <?php
 namespace Elementor;
 
-class BEW_Hover_Card_Widget extends Widget_base {
+class Bilamina_Hover_Card_Widget extends Widget_base {
      public function get_name() {
          return 'bew-hover-card-widget-id';
      }
@@ -58,4 +58,4 @@ class BEW_Hover_Card_Widget extends Widget_base {
 
      }
 }
-Plugin::instance()->widgets_manager->register_widget_type(new BEW_Hover_Card_Widget());
+Plugin::instance()->widgets_manager->register_widget_type(new Bilamina_Hover_Card_Widget());
