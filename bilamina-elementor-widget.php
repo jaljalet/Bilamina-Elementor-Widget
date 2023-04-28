@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: Bilamina Elementor Widget
- * Plugin URI: https://example.com
+ * Plugin URI: https://bilamina.com/bilamina-elementor-widget
  * Description: A bilamina elementor widget
  * Version: 1.0.0
- * Author: John Doe
+ * Author: Islam Ilyasoglu
  * Author URI: https://bilamina.com
  * Text Domain: bilamina-elementor-widget
  */
