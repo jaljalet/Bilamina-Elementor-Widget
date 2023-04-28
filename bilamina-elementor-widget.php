@@ -15,7 +15,7 @@
  * Elementor Extension main CLass
  * @since 1.0.0
  */
-final class BILAMINA_Elementor_Widget {
+final class Bilamina_Elementor_Widget {
 
     // Plugin version
     const VERSION = '1.0.0';
@@ -180,4 +180,4 @@ final class BILAMINA_Elementor_Widget {
 
 }
 
-BILAMINA_Elementor_Widget::instance();
+Bilamina_Elementor_Widget::instance();
