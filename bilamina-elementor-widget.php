@@ -57,8 +57,8 @@ final class Bilamina_Elementor_Widget {
     * @since 1.0.0
     */
     public function define_constants() {
-        define( 'BEW_PLUGIN_URL', trailingslashit( plugins_url( '/', __FILE__ ) ) );
-        define( 'BEW_PLUGIN_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
+        define( 'BILAMINA_PLUGIN_URL', trailingslashit( plugins_url( '/', __FILE__ ) ) );
+        define( 'BILAMINA_PLUGIN_PATH', trailingslashit( plugin_dir_path( __FILE__ ) ) );
     }
 
     /**
@@ -66,11 +66,11 @@ final class Bilamina_Elementor_Widget {
     * @since 1.0.0
     */
     public function scripts_styles() {
-        wp_register_style( 'bew-style', BEW_PLUGIN_URL . 'assets/dist/css/public.min.css', [], rand(), 'all' );
-        wp_register_script( 'bew-script', BEW_PLUGIN_URL . 'assets/dist/js/public.min.js', [ 'jquery' ], rand(), true );
+        wp_register_style( 'bilamina-style', BILAMINA_PLUGIN_URL . 'assets/dist/css/public.min.css', [], rand(), 'all' );
+        wp_register_script( 'bilamina-script', BILAMINA_PLUGIN_URL . 'assets/dist/js/public.min.js', [ 'jquery' ], rand(), true );
 
-        wp_enqueue_style( 'bew-style' );
-        wp_enqueue_script( 'bew-script' );
+        wp_enqueue_style( 'bilamina-style' );
+        wp_enqueue_script( 'bilamina-script' );
     }
 
     /**
@@ -111,7 +111,7 @@ final class Bilamina_Elementor_Widget {
     * @since 1.0.0
     */
     public function init_widgets() {
-        require_once BEW_PLUGIN_PATH . '/widgets/hover-card.php';
+        require_once BILAMINA_PLUGIN_PATH . '/widgets/hover-card.php';
     }
 
     /**
@@ -120,7 +120,7 @@ final class Bilamina_Elementor_Widget {
     */
     public function init_category() {
         Elementor\Plugin::instance()->elements_manager->add_category(
-            'bew-for-elementor',
+            'bilamina-for-elementor',
             [
                 'title' => 'Bilamina Elementor Widgets'
             ],
