@@ -3,7 +3,7 @@ namespace Elementor;
 
 class Bilamina_Hover_Card_Widget extends Widget_base {
      public function get_name() {
-         return 'bew-hover-card-widget-id';
+         return 'bilamina-hover-card-widget-id';
      }
 
      public function get_title() {
@@ -12,7 +12,7 @@ class Bilamina_Hover_Card_Widget extends Widget_base {
 
      public function get_script_depends() {
          return [
-             'bew-script'
+             'bilamina-script'
          ];
      }
 
@@ -22,7 +22,7 @@ class Bilamina_Hover_Card_Widget extends Widget_base {
 
      public function get_categories() {
          return [
-             'bew-for-elementor'
+             'bilamina-for-elementor'
          ];
      }
 
@@ -46,7 +46,7 @@ class Bilamina_Hover_Card_Widget extends Widget_base {
      }
 
      protected function render() {
-        $mywe_values = $this->get_settings_for_display();
+        $mybilamina_values = $this->get_settings_for_display();
         ?>
         <div>
             <h1> This is example widget.</h1>
